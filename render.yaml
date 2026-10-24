@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: eposnow-connector
+    runtime: node
+    plan: free
+    region: frankfurt
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: EPOSNOW_API_KEY
+        sync: false
+      - key: EPOSNOW_API_SECRET
+        sync: false
+      - key: CONNECTOR_KEY
+        generateValue: true

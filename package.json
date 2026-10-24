@@ -1,0 +1,10 @@
+{
+  "name": "eposnow-connector",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Read-only Claude connector (MCP server) for Epos Now till data",
+  "type": "module",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=20" }
+}
